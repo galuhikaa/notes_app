@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.mobile.notesapp.ui.Detail
+import com.mobile.notesapp.ui.DetailActivity
 import com.mobile.notesapp.R
 import com.mobile.notesapp.data.Note
 
@@ -30,7 +30,7 @@ class NotesAdapter(private var note : List<Note>, context: Context) : RecyclerVi
         holder.titletextview.text = note.title
 
         holder.itemView.setOnClickListener {
-            val intentDetail = Intent(holder.itemView.context, Detail::class.java)
+            val intentDetail = Intent(holder.itemView.context, DetailActivity::class.java)
             intentDetail.putExtra("id", note.id)
             holder.itemView.context.startActivity(intentDetail)
         }

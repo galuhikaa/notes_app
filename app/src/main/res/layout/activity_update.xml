@@ -10,14 +10,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_note"
+        android:text="@string/update_note"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="15dp"
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/title_edittext"
+        android:id="@+id/title_update"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="15dp"
@@ -31,28 +31,29 @@
         tools:ignore="RtlSymmetry" />
 
     <EditText
-        android:id="@+id/description_edittext"
+        android:id="@+id/description_update"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:gravity="top"
+        android:importantForAutofill="no"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="10dp"
-        android:importantForAutofill="no"
         android:inputType="text"
         android:padding="15dp"
         android:hint="@string/enter_the_description"
         android:background="@drawable/edittext_border"
         tools:ignore="RtlSymmetry" />
+
     <Button
-        android:id="@+id/save_button"
+        android:id="@+id/save_button_update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save"
         android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
         android:backgroundTint="#00BFA5"
-        android:textColor="@color/black"/>
+        android:text="@string/save"
+        android:textColor="@color/black" />
 
 </LinearLayout>

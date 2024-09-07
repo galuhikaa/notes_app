@@ -53,4 +53,16 @@ class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
         db.close()
         return notelist
     }
+
+    fun updateNotes(note : Note) {
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_TITLE, note.title)
+            put(COLUMN_DESC, note.description)
+        }
+        val wId = "$COLUMN_ID = ? "
+        val whereArgs = arrayOf(note.id.toString())
+        db.update(TABLE_NAME, values, wId, whereArgs)
+        db.close()
+    }
 }

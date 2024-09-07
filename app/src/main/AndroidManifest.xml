@@ -13,7 +13,10 @@
         android:theme="@style/Theme.NotesApp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.Detail"
+            android:name=".ui.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".ui.AddActivity"
