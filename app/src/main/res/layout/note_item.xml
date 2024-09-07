@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:text="@string/title"
             android:textSize="20sp"
+            android:maxLines="1"
             android:textStyle="bold"/>
     </LinearLayout>
 

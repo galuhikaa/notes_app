@@ -1,4 +1,4 @@
-package com.mobile.notesapp
+package com.mobile.notesapp.ui
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.mobile.notesapp.R
 import com.mobile.notesapp.data.Note
 import com.mobile.notesapp.data.NoteDatabaseHelper
 import com.mobile.notesapp.databinding.ActivityDetailBinding

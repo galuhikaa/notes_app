@@ -1,4 +1,4 @@
-package com.mobile.notesapp
+package com.mobile.notesapp.ui
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.mobile.notesapp.R
 import com.mobile.notesapp.data.Note
 import com.mobile.notesapp.data.NoteDatabaseHelper
 import com.mobile.notesapp.databinding.ActivityAddBinding
@@ -33,10 +34,19 @@ class AddActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-
         binding.saveButton.setOnClickListener {
             val title = binding.titleEdittext.text.toString()
             val desc = binding.descriptionEdittext.text.toString()
+
+            if (title.isEmpty()) {
+                binding.titleEdittext.error = "Title tidak boleh kosong"
+                return@setOnClickListener // Hentikan proses jika title kosong
+            }
+            if (desc.isEmpty()) {
+                binding.descriptionEdittext.error = "Description tidak boleh kosong"
+                return@setOnClickListener // Hentikan proses jika description kosong
+            }
+
             val note = Note(0, title, desc)
             db.insert(note)
             finish()

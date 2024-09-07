@@ -13,13 +13,13 @@
         android:theme="@style/Theme.NotesApp"
         tools:targetApi="31">
         <activity
-            android:name=".Detail"
+            android:name=".ui.Detail"
             android:exported="false" />
         <activity
-            android:name=".AddActivity"
+            android:name=".ui.AddActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

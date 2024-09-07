@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddActivity">
+    tools:context=".ui.AddActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="10dp"
-        android:paddingStart="15dp"
+        android:padding="15dp"
         android:hint="@string/enter_the_title"
         android:background="@drawable/edittext_border"
         tools:ignore="RtlSymmetry" />

@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.mobile.notesapp.Detail
+import com.mobile.notesapp.ui.Detail
 import com.mobile.notesapp.R
 import com.mobile.notesapp.data.Note
 
