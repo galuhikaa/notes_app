@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">NotesApp</string>
+    <string name="add_notes">add notes</string>
+    <string name="about">about</string>
+
+    <string name="tentang_kami">Tentang Kami</string>
+    <string name="selamat_datang_di_notesapp">Selamat datang di NotesApp</string>
+    <string name="about1">Anda dapat mencatat ide, menyimpan daftar tugas, atau mengatur informasi penting kapan saja dan di mana saja. Kami memahami pentingnya mengelola catatan dengan mudah, oleh karena itu aplikasi ini hadir dengan antarmuka yang sederhana</string>
+    <string name="about2">Kami selalu berkomitmen untuk meningkatkan pengalaman Anda dan menyediakan fitur baru yang sesuai dengan kebutuhan Anda. Terima kasih telah memilih Notes App sebagai partner dalam mengelola catatan Anda.</string>
+    <string name="about3">Jika Anda memiliki masukan atau pertanyaan, hubungi kami di galuihika02@gmail.com.</string>
+
+
 </resources>
