@@ -6,9 +6,4 @@
         android:icon="@drawable/baseline_note_add_24"
         app:showAsAction="ifRoom"
         android:title="@string/add_notes"/>
-    <item
-        android:id="@+id/about"
-        android:icon="@drawable/baseline_account_circle_24"
-        app:showAsAction="always"
-        android:title="@string/about"/>
 </menu>

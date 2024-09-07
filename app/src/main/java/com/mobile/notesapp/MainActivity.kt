@@ -38,11 +38,7 @@ class MainActivity : AppCompatActivity() {
                 val intentBookmark = Intent(this@MainActivity, AddActivity::class.java)
                 startActivity(intentBookmark)
                 return true
-            }R.id.about -> {
-            val intentTheme = Intent(this@MainActivity, About::class.java)
-            startActivity(intentTheme)
-            return true
-        }
+            }
             else -> return super.onOptionsItemSelected(item)
         }
     }
