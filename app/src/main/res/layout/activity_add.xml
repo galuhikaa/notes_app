@@ -30,20 +30,35 @@
         android:background="@drawable/edittext_border"
         tools:ignore="RtlSymmetry" />
 
-    <EditText
+<!--    <EditText-->
+<!--        android:id="@+id/description_edittext"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:gravity="top"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:importantForAutofill="no"-->
+<!--        android:inputType="text"-->
+<!--        android:padding="15dp"-->
+<!--        android:hint="@string/enter_the_description"-->
+<!--        android:background="@drawable/edittext_border"-->
+<!--        tools:ignore="RtlSymmetry" />-->
+
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/description_edittext"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:gravity="top"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="10dp"
-        android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="textMultiLine"
+        android:lines="15"
         android:padding="15dp"
         android:hint="@string/enter_the_description"
-        android:background="@drawable/edittext_border"
-        tools:ignore="RtlSymmetry" />
+        android:gravity="top"/>
+
     <Button
         android:id="@+id/save_button"
         android:layout_width="match_parent"
