@@ -75,7 +75,8 @@ class DetailActivity : AppCompatActivity() {
                 startActivityForResult(intentUpdate, requestCodeUpdate)
                 return true
             }R.id.delete -> {
-                Toast.makeText(this, "delete text", Toast.LENGTH_SHORT).show()
+                note?.let { db.deleteNote(it.id) }
+                finish()
                 return true
             }android.R.id.home -> {
                 onBackPressed()
