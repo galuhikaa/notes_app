@@ -1,0 +1,1 @@
+A simple note application built for Android, utilizing an SQLite database for local data storage. This app allows users to create, read, update, and delete notes seamlessly. With a clean and user-friendly interface, ensuring that all notes are stored locally on the device, even after the app is closed.
